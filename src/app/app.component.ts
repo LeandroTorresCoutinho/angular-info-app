@@ -9,5 +9,5 @@ export class AppComponent {
   title = 'angular-info-app';
   events: string[] = [];
   opened: boolean;
-  
+
 }
