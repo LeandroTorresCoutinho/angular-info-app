@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300")
+
+$sidenav-font: 'Comic Neue', Sans-serif
+$primary-color: #819ca9
+$header-color: #29434e
+$sidenav-color: #546e7a
+
+.container 
+    position: absolute
+    top: 92px
+    bottom: 0
+    left: 0
+    right: 0
+    background: $primary-color
+
+.container-header
+    position: relative
+    top: 0
+    left: 0
+    right: 0
+    background: $header-color
+    width: 100%
+    height:92px
+
+.sidenav    
+    background: $sidenav-color
+
+.item
+    font-family: $sidenav-font
+    font-size: 2em
+    color: $header-color
+    padding-top:1em
+    padding-right:1em
+    list-style-type: none
+    cursor: pointer
+
+.item:Hover
+    color: $primary-color
