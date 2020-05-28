@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { AppMenuComponent } from './app-menu/app-menu.component';
+import { TypescriptNewsComponent } from './typescript-news/typescript-news.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppMenuComponent
+    AppMenuComponent,
+    TypescriptNewsComponent
   ],
   imports: [
     BrowserModule,
