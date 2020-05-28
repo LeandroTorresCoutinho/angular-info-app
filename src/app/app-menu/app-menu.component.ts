@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class AppMenuComponent implements OnInit {
   @Input('sidenav')
-  sidenav: String;
+  sidenav: any;
   
   constructor() { }
 

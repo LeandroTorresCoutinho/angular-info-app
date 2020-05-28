@@ -3,9 +3,14 @@
 </div>
 <div>
   <mat-sidenav-container class="container">
-    <mat-sidenav class="sidenav" #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
-                 (closed)="events.push('close!')">
-      Sidenav contentdsadsadsas
+    <mat-sidenav class="sidenav" #sidenav mode="side" [(opened)]="opened" 
+      (opened)="events.push('open!')" (closed)="events.push('close!')">
+      <ul>
+        <li class="item">Typescript 3.7 news</li>
+        <li class="item">teste</li>
+        <li class="item">teste</li>
+        <li class="item">teste</li>
+      </ul>
     </mat-sidenav>
   
     <mat-sidenav-content>
