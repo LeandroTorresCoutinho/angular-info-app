@@ -1,0 +1,128 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Lobster|Roboto|Old+Standard+TT|Raleway)
+
+%box-sizing
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+$gutter                : 12px
+$height__toolbar       : 28px
+$color__foreground     : #E7E7E7
+$color__background     : #FCFCFC
+
+$color__js--comment    : #93A1A1
+$color__js--built-in   : #268BD2
+$color__js--keyword    : #859900
+$color__js--params     : #6C71C4
+$color__js--string     : #2AA198
+
+
+*, *::before, *::after
+  box-sizing: inherit
+
+html
+  font: 100%/1.5 "Titillium Web","Lucida Grande","Lucida Sans",sans-serif
+
+body, 
+html
+  max-width: 100%
+  overflow-x: hidden
+
+body
+  color: #333
+  text-rendering: optimizeLegibility
+  margin: 0
+  background: #FFF
+ 
+section
+  display: block
+  
+.wrapper
+  width: 100%
+  clear: both
+  
+.code-example
+  padding-top: 0
+  
+.container
+  margin: 0 auto
+  width: auto
+  max-width: 1020px
+  list-style: none
+  zoom: 1
+  
+  &:before,
+  &:after
+    content: ""
+    display: table
+  
+.content
+  @extend %box-sizing
+  width: auto
+  padding: 6em 2em
+
+// Build out code doc
+.browser
+  
+  &__toolbar
+    @extend %box-sizing
+    width: 100%
+    height: $height__toolbar
+    line-height: $height__toolbar
+    position: relative
+    border-top-right-radius: 3px
+    border-top-left-radius: 3px
+    background-color: $color__foreground
+    
+  &__body
+    font: normal 1em monospace
+    background-color: $color__background
+    border: 1px solid $color__foreground
+    
+// Build Circles
+
+.toolbar__control,
+.toolbar__control:before,
+.toolbar__control:after
+  width: 12px
+  height: 12px
+  background-color: #FFF
+  border-radius: 50%
+  display: inline-block
+
+.toolbar__control
+  position: relative
+  margin-left: $gutter * 2 + 2
+  
+  &:before,
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+
+  &:before
+    left: -120%
+
+  &:after
+    right: -120%
+    
+.icon
+  color: shade($color__foreground, 30%)
+  line-height: $height__toolbar
+  margin-right: $gutter
+  float: right
+
+ 
+.hljs-comment
+  color: $color__js--comment
+.hljs-built_in
+  color: $color__js--built-in
+.hljs-keyword
+  color: $color__js--keyword
+.hljs-params
+  color: $color__js--params
+.hljs-string
+  color: $color__js--string
+  

@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { TypescriptNewsRoutingModule } from './typescript-news-routing.module';
-import { RouterModule } from '@angular/router';
+import { TypescriptNewsComponent } from './typescript-news.component';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [TypescriptNewsComponent],
   imports: [
     CommonModule,
     TypescriptNewsRoutingModule
